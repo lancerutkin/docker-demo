@@ -1,0 +1,3 @@
+docker image pull redis
+docker container --name hello -d redis
+docker exec -it hello bash

@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379"
+  app:
+    image: lrutkin/node-web-app:latest
+    ports:
+      - "49160:8080"
+    environment:
+      - IS_DOCKER=true
